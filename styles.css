@@ -1,0 +1,411 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 300vh;
+  background: linear-gradient(to bottom, #000000, #333333, #666666, #999999, #cccccc);
+  color: white;
+
+ 
+
+
+}
+
+.title-wrapper {
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.center-title-one {
+    position: relative;
+    font-size: 65px;
+    margin: -10px 30px 0 30px; /* Move text down with top margin */
+    color: white;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: fit-content; /* optional: helps with centering */
+    z-index: 10;
+} 
+
+.center-title-two {
+  position: relative;
+  font-size: 95px;
+  margin: -35px 30px 0 30px; /* Move text down with top margin */
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+   display: inline-block;
+   width: fit-content; /* optional: helps with centering */
+    z-index: 10;
+
+} 
+
+
+.subtitle-wrapper {
+  text-align: center;
+  width: 100%;
+}
+h2 {
+  display: inline-block; /* needed if you want to respect fit-content */
+  font-family: 'Inter', sans-serif;
+  font-weight: 150;
+  font-size: 22px;
+  color: white;
+  margin: 40px auto;
+  
+}
+
+
+/* Navigation Bar */
+.navbar {
+  position: static;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 30px 0;
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+  z-index: 1000;
+  transition: position 0.3s ease;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px;
+  padding: 0;
+}
+
+.nav-list li a {
+  display: flex;
+  justify-content: center;        /* centers text horizontally */
+  align-items: center;            /* centers text vertically */
+  padding: 12px 28px;
+  width: 140px;        /* ← fixed width for all buttons */
+  height: 22px;        /* ← fixed height for all buttons */
+  white-space: nowrap;          /* Prevents text wrapping */
+  border: 1px solid white;
+  border-radius: 999px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 15px;             /* ← CHANGE FONT SIZE HERE */
+  font-weight: 200;
+  font-family: 'Audiowide', sans-serif;  /* ← CHANGE FONT HERE */
+  color: white;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover {
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  color: rgba(255, 255, 255, 0.6);      /* White text, slightly faded */
+}
+
+
+.spotifycaption-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.spotify-caption-bottom {
+  position: static;
+  font-size: 15px;
+  margin: 8px 30px 0 30px; /* Move text down with top margin */
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: fit-content; /* optional: helps with centering */
+
+}.music-design-wrapper {
+  text-align: center;
+  width: 100%;
+  margin-top: -10px;
+}
+
+.music-design {
+  position: static;
+  font-size: 30px;
+  margin: 20px 30px 0 30px; /* Move text down with top margin */
+  color: white;
+  position: relative;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: fit-content; 
+
+}
+
+
+
+
+/* Background graphic: one image, not repeated */
+.background-graphic {
+  position: fixed;
+  top: 0px;        /* adjust to move up/down */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;  /* 👈 full width of the screen */
+  height: 100vh;
+  background-image: url('pics/Screenshot 2025-06-05 at 7.39.19 PM.png'); /* replace with your actual image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;  
+  opacity: .1;       /* adjust to make it more or less visible */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hollow img {
+    display: block;
+    width: 550px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+    opacity: .3;
+    border-radius: 72px;
+}
+
+
+
+
+
+.iframe {
+  border-radius: 24x;
+}
+
+/* timeline section */
+.timeline-section {
+  margin: -100px 30px 0 30px;
+  padding: 60px 60px;
+  text-align: center;
+  color: white;
+  border-radius: 24px;
+  
+}
+
+.timeline-intro-top {
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, .4);
+  padding: 40px 20px;
+  margin-top: 25px; 
+  padding-top: 5px;
+
+}
+
+
+.timeline-intro-bottom {
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(12, 11, 11);
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, .4);
+  padding-top: 0px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin-top: -20px;        /* Optional: eliminate spacing */
+
+}
+
+
+/* Intro para */
+.intro-para {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  
+  color: rgba(12, 11, 11, 1);
+  padding-top: 0px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin: -100px 120px 0 120px;
+}
+.intro-question {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 400;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 22px;
+}
+.question {
+text-align: center;
+  background-color: rgba(36, 35, 35, 0.75); /* 🔲 Light semi-transparent fill */
+  border: 2px solid rgba(36, 35, 35, 0.75); /* Optional: border for visibility */
+  border-radius: 16px;
+  padding: 20px 30px;
+  margin: -15px auto;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;     /* Keep text in one line */
+  overflow-x: auto;        /* Scroll if text overflows */
+  max-width: 100%; 
+  border-radius: 72px;   
+
+}
+
+.question:hover {
+  transform: scale(1.03); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transition: all 0.3s ease;
+  filter: brightness(1.2);
+}
+
+/* bottom right button nav to drop */
+.bottom-right-button {
+  position: fixed;
+  bottom: 35px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.bottom-right-button:hover {
+  transform: scale(1.03); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0); /* Soft shadow */
+  transition: all 0.3s ease;
+ 
+}
+
+.nav-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: 'Audiowide', sans-serif;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+/* 🔄 Fade both text and circle on hover */
+.nav-arrow-wrapper:hover {
+  opacity: 0.5;
+}
+
+/* Circle styling */
+.arrow-circle {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.nav-arrow-text {
+  font-size: 20px;
+}
+
+/* bottom left button nav to RQ */
+.bottom-left-bottom {
+  position: relative;
+  top: -2005px;
+  left: 40px;
+  z-index: 1000;
+}
+.bottom-left-bottom:hover {
+  transform: scale(1.03); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0); /* Soft shadow */
+  transition: all 0.3s ease;
+ 
+}
+
+.left-nav-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: 'Audiowide', sans-serif;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.left-nav-arrow-wrapper:hover {
+  opacity: 0.5;
+}
+
+.left-arrow-circle {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.left-nav-arrow-text {
+  font-size: 20px;
+}
+
+
+/* bottom left top button nav to timeline */
+
+.bottom-left-top {
+  position: relative;
+  top: -2030px;
+  left: 40px;
+  z-index: 1000;
+}
+.bottom-left-top:hover {
+  transform: scale(1.03); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0); /* Soft shadow */
+  transition: all 0.3s ease;
+ 
+}
+.left-nav-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: 'Audiowide', sans-serif;
+  color: white;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.left-nav-arrow-wrapper:hover {
+  color: #ccc;
+  opacity: 0.8;
+}
+
+.left-arrow-circle {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.left-nav-arrow-text {
+  font-size: 18px;
+}

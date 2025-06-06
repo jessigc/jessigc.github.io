@@ -1,0 +1,33 @@
+<!-- look at HTML formatting elements -->
+
+<!-- head and body both have closing tag (closing has /) -->
+ <!-- always going to be working in the body -->
+
+ <!-- put images in folder on left side, use <img src "INSERT RELATIVE PATH" alt "random image" -->
+  <!-- The random image part is the alt text which describes what the photo is -->
+
+
+  <!-- github commands -->
+   <!-- git status (shows what files have been changed and need to added) --> 
+    <!-- red stuff shows stuff that has been changed -->
+    <!-- git add "filename" (adds the changed files to be saved; choose what files to be saved/committed) -->
+        <!--  ex. git add "styles.css"  -->
+         <!-- ex.git add . to add everything --> 
+     <!-- git commit -m "DESCRIPTION OF CHANGE" (type in a description for the commit; save the files with a description of what was changed ) -->
+      <!-- use commit to go back into code and what code was like before changes -->
+      <!-- git push (pushes all the changes to the repo to be stored online) -->
+
+
+
+       <h1> hello</h1>
+        <p>image from colab</p>
+
+
+
+
+
+<p> hi! my name is <strong> jess </strong>  and this is my amazing amazing website hehe </p> 
+        <!-- the above gives me access to text elements like bold or italic -->
+        hi! my name is jess <br>
+        and this is my amazing <br>
+        amazing website hehe 

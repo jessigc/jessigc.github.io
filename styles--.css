@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  min-height: 300vh;
+  background: linear-gradient(to bottom, #000000, #333333, #666666, #999999, #cccccc);
+  color: white;
+
+}
+
+.title-wrapper {
+  text-align: center;
+  width: 100%;
+  margin-top: 90px;
+}
+.center-title-one {
+    position: static;
+    font-size: 65px;
+    margin: -100px 30px 0 30px; /* Move text down with top margin */
+    color: rgba(255, 255, 255, 1); /* Fully opaque white */
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: fit-content; /* optional: helps with centering */
+    opacity: 1; /* Ensure full opacity */
+} 
+
+.center-title-two {
+  position: static;
+  font-size: 95px;
+  margin: -35px 30px 0 30px; /* Move text down with top margin */
+  color: rgba(255, 255, 255, 1); /* Fully opaque white */
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+   display: inline-block;
+   width: fit-content; /* optional: helps with centering */
+   opacity: 1; /* Ensure full opacity */
+} 
+
+
+
+
+.subtitle-wrapper {
+  text-align: center;
+  width: 100%;
+}
+h2 {
+  display: inline-block; /* needed if you want to respect fit-content */
+  font-family: 'Inter', sans-serif;
+  font-weight: 150;
+  font-size: 22px;
+  color: white;
+  margin: 10px auto;
+  
+}
+
+
+/* Navigation Bar */
+.navbar {
+  position: static;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 30px 0;
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+  z-index: 1000;
+  transition: position 0.3s ease;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+  padding: 0;
+}
+
+.nav-list li a {
+  display: flex;
+  justify-content: center;        /* centers text horizontally */
+  align-items: center;            /* centers text vertically */
+  padding: 12px 28px;
+  width: 140px;        /* ← fixed width for all buttons */
+  height: 22px;        /* ← fixed height for all buttons */
+  white-space: nowrap;          /* Prevents text wrapping */
+  border: 1px solid white;
+  border-radius: 999px;
+  background: transparent;
+  text-decoration: none;
+  font-size: 15px;             /* ← CHANGE FONT SIZE HERE */
+  font-weight: 200;
+  font-family: 'Audiowide', sans-serif;  /* ← CHANGE FONT HERE */
+  color: white;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover {
+  background: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+
+.spotifycaption-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.spotify-caption-bottom {
+  position: static;
+  font-size: 15px;
+  margin: 15px 30px 0 30px; /* Move text down with top margin */
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: fit-content; /* optional: helps with centering */
+
+}.music-design-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.music-design {
+  position: static;
+  font-size: 30px;
+  margin: 25px 30px 0 30px; /* Move text down with top margin */
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: fit-content; 
+}
+
+
+
+
+/* Background graphic: one image, not repeated */
+.background-graphic {
+  position: absolute;
+  top: 0px;        /* adjust to move up/down */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1450px;
+  height: 2334px;
+  background-image: url('pics/Screenshot 2025-06-05 at 7.39.19 PM.png'); /* replace with your actual image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;  
+  opacity: .2;       /* adjust to make it more or less visible */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hollow img {
+    display: block;
+    width: 550px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    opacity: .3;
+    border-radius: 72px;
+}
+
+.iframe {
+  border-radius: 24x;
+}
+
+/* timeline section */
+.timeline-section {
+  margin: -100px 30px 0 30px;
+  padding: 60px 60px;
+  text-align: center;
+  color: white;
+  border-radius: 24px;
+  
+}
+
+.timeline-intro-top {
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  padding: 40px 20px;
+  padding-top: 12px;
+
+}
+
+
+.timeline-intro-bottom {
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(12, 11, 11);
+  padding-top: 0px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin-top: -75px;        /* Optional: eliminate spacing */
+
+}
+
+
+/* Intro para */
+.intro-para {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(12, 11, 11, 1);
+  padding-top: 0px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin: -40px 60px 0 60px;
+}
