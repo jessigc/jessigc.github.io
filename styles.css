@@ -184,7 +184,7 @@ h2 {
   transform: translateX(-50%);
   width: 100vw;  /* 👈 full width of the screen */
   height: 100vh;
-  background-image: url('pics/Screenshot 2025-06-10 at 4.51.41 PM.png'); /* replace with your actual image */
+  background-image: url('pics/slander.png'); /* replace with your actual image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
