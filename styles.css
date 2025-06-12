@@ -41,6 +41,20 @@ html, body {
     width: fitent; /* optional: helps with centering */
     z-index: 10;
 } 
+.hollow img {
+    display: block;
+    width: 550px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    opacity: .3;
+    border-radius: 72px;
+}
+
+
+
+
 
 .center-title-two {
   position: relative;
@@ -75,11 +89,12 @@ h2 {
 /* Navigation Bar */
 .navbar {
   position: static;
-  top: 10px;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 30px 0;
+  /* backdrop-filter: blur(8px);    Optional glass effect */
+  margin-top: -11px;          
+  padding: -90px 0;        
+  background-color: rgba(255, 255, 255, 0.201);
   font-family: 'Audiowide', sans-serif;
   text-align: center;
   z-index: 1000;
@@ -134,7 +149,7 @@ h2 {
 
 .spotify-caption-top {
   font-size: 12px;
-  margin: 20px 30px 0 30px; /* Top margin pushes text down */
+  margin: 37px 30px 0 30px; /* Top margin pushes text down */
   color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   font-family: 'Varela Round', sans-serif;
@@ -194,18 +209,7 @@ h2 {
   pointer-events: none;
 }
 
-.hollow img {
-    display: block;
-    width: 550px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    opacity: .4;
-    border-radius: 72px;
-}
-
-
+ 
 
 
 
@@ -452,7 +456,7 @@ text-align: center;
 .question-drop {
   position: relative;
 font-size: 65px;
-margin: 2px 40px 0 30px;
+margin: 40px 40px 0 30px;
 font-family: 'Inter', sans-serif;
 text-align: center;
 font-weight: 120; 
@@ -468,7 +472,7 @@ z-index: 10;
   font-size: 20px;
   font-weight: 350;
   color: rgb(255, 255, 255);
-  padding-top: 15px;   /* 🔽 Reduce this */
+  padding-top: 30px;   /* 🔽 Reduce this */
   padding-bottom: 40px;
   margin: 0px 75px 0 75px;
 }
@@ -505,7 +509,7 @@ z-index: 10;
   color: rgb(255, 255, 255);
   padding-top: 5px;   /* 🔽 Reduce this */
   padding-bottom: 40px;
-  margin:-5px 20px 0 20px;
+  margin:-25px 20px 0 20px;
 }
 
 
@@ -661,11 +665,7 @@ a:hover {
   max-width: 1200px;
 }
 
-.graph-img {
-  flex: 1 1 30%;       /* Take the full width if needed */
-  text-align: left;
-  margin-top: 10px;
-}
+
 
 .graph-text {
   flex: 1 1 45%;
@@ -673,8 +673,13 @@ a:hover {
   line-height: 1.6;
   margin-top: -50px;
   max-width: 400px; 
+  margin-bottom: -100px;
 }
-  
+  .graph-img {
+  flex: 1 1 30%;       /* Take the full width if needed */
+  text-align: left;
+  margin-top: 10px;
+}
 
 .edm-graph {
   width: 100%;
@@ -708,7 +713,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  transform: translate(-36px, -3770px);  /* 👈 smaller shift left & up */
+  transform: translate(-36px, -3663px);  /* 👈 smaller shift left & up */
   z-index: 1000;
   text-decoration: none;
   color: inherit;
@@ -719,7 +724,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
- transform: translate(1030px, -3820px); 
+ transform: translate(1030px, -3713px); 
   z-index: 1000;
   text-decoration: none;
   color: inherit;
@@ -755,7 +760,7 @@ a:hover {
 .studytitle-wrapper {
   text-align: center;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .studycenter-title-one {
     display: inline-block; /* needed if you want to respect fit-content */
@@ -763,6 +768,567 @@ a:hover {
   font-weight: 150;
   font-size: 40px;
   color: white;
-  margin: -35px auto;
+  margin: 35px auto;
 } 
+
+.intro-study {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 350;
+  color: rgb(255, 255, 255);
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-5px 50px 0 50px;
+}
+
+
+ .metadata-table-img {
+  flex: 1 1 30%;       /* Take the full width if needed */
+  text-align: center;
+  margin-top: -20px;
+  opacity: 0.9;
+}
+
+.metadata-graph {
+  width: 100%;
+
+  margin-top: 20px;
+  max-width: 1000px; /* Try 400–500px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  padding: 10px 10px 10px 10px; /* Less padding on the bottom */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.metadata-graph:hover {
+  transform: scale(1.03); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0); /* Soft shadow */
+  transition: all 0.3s ease;
+}
+
+
+.cont-study {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 350;
+  color: rgb(255, 255, 255);
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-5px 50px 0 50px;
+}
+.cont2-study {
+  text-align: center;
+  position: relative;
+  background-color: rgba(247, 247, 247, 0.75);
+  border: 2px solid rgba(247, 247, 247, 0.75);
+  font-family: 'Audiowide', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(41, 41, 41);
+  padding: 20px 75px 20px 75px;  /* ⬅️ Extra tight left/right padding */
+  margin: -20px 35px 0 35px;
+  overflow-x: auto;
+  max-width: 100%;
+  border-radius: 72px;
+}
+
+.audio1 {
+text-align: center;
+margin-top: 70px;
+
+}
+.audio2 {
+  text-align: center;
+  margin-top: 45px;
+    
+}
+
+.ta-study {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-5px 75px 0 75px;
+}
+.scrolling-pair-riptide{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* stack on smaller screens */
+  margin: -15px auto;
+}
+
+.Riptide-transcriptAI {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-y: auto;
+  max-height: 300px;
+  width: 45%;         /* ✅ Equal width */
+  min-width: 280px;   /* Prevent collapse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: pre-wrap;
+}
+
+.Riptide-transcriptTRUE {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-y: auto;
+  max-height: 300px;
+  width: 45%;         /* ✅ Equal width */
+  min-width: 280px;   /* Prevent collapse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: pre-wrap;
+}
+
+
+.scrolling-pair-WYA{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* stack on smaller screens */
+  margin: 25px auto;
+}
+
+.WYA-transcriptAI {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-y: auto;
+  max-height: 300px;
+  width: 45%;         /* ✅ Equal width */
+  min-width: 280px;   /* Prevent collapse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: pre-wrap;
+}
+
+.WYA-transcriptTRUE {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-y: auto;
+  max-height: 300px;
+  width: 45%;         /* ✅ Equal width */
+  min-width: 280px;   /* Prevent collapse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: pre-wrap;
+}
+
+
+
+
+.ta-study2 {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-25px 85px 0 85px;
+}
+
+.drop-to-transcript1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translate(40px, -3115px);  /* 👈 smaller shift left & up */
+  z-index: 1000;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.drop-to-studyplay1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+ transform: translate(1220px, -3161px); 
+  z-index: 1000;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+.soundcloud-themes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+  flex-wrap: wrap;                  /* Wraps on smaller screens */
+  background-color: transparent;
+  font-family: 'Audiowide', sans-serif;
+  margin-top: -85px;
+  width: 100%;                      /* 👈 Allow full width */
+  max-width: 1200px;                /* Optional: control max size */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 99px;
+}
+
+
+.theme-column {
+  flex: 1 1 250px;
+  background: #1a1a1a;
+  padding: 10px 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  min-width: 240px;
+}
+
+.theme-title {
+  text-align: center;
+  color: #6a8ebf;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.theme-column iframe {
+  width: 100%;
+  height: 80px;         /* Smaller player height */
+  margin-bottom: 12px;  /* Less spacing between embeds */
+  border-radius: 6px;
+}
+
+
+.studyplay-title {
+  text-align: center;
+  width: 100%;
+  margin-top: -5px;
+}
+.studycenter-title-two {
+    position: relative;
+    font-size: 55px;
+    margin: -10px 30px 0 30px; /* Move text down with top margin */
+    color: white;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: fitent; /* optional: helps with centering */
+    z-index: 10;
+} 
+
+
+
+/* tiktok page */
+
+
+.phone-figma-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background: transparent;
+  margin-top: 29px;
+}
+
+
+
+.phone-figma {
+  width: 340px;          /* ⬆️ Increased from 280px */
+  height: 650px;         /* ⬆️ Increased from 540px */
+  background: linear-gradient(160deg, #f4f4f482, #dcdcdc);
+  border: 2px solid #aaa;
+  border-radius: 48px;
+  box-shadow:
+    0 15px 25px rgba(0, 0, 0, 0.2),
+    inset 0 0 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px;
+  margin-left: 85px;
+}
+
+
+
+/* Front Camera Circle */
+.phone-notch {
+  width: 50px;
+  height: 16px;
+  background: #1b1b1baa;
+  border-radius: 10px;
+  margin-top: 7px;
+}
+
+/* Screen */
+.phone-screen {
+  margin-top: 3px;
+  width: 92%;
+  height: 92%;
+  background: #1b1b1baa;
+  border-radius: 30px;
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   overflow: hidden;
+  position: relative;
+}
+
+/* Fake screen text or demo content */
+.phone-screen-text {
+  color: #fafafa;
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: -68px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  /* font-family: 'Varela Round', sans-serif; */
+
+  /* SCROLLING SETTINGS */
+  height: 600px;                /* Adjust to fit your phone-screen height */
+  overflow-y: auto;             /* Enable vertical scrolling */
+  overflow-x: hidden;           /* Disable horizontal scrolling */
+  white-space: pre-wrap;        /* Keep line breaks but wrap long lines */
+
+   scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE 10+ */
+}
+
+.phone-screen-text::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari, Opera */
+}
+
+
+
+/* Home button (if needed) */
+/* .phone-home-button {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, #888, #a3a0a0);
+  border-radius: 50%;
+  margin: 18px 0;
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.15);
+} */
+
+.sm-titlewrapper {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  
+}
+.sm-title {
+     position: relative;
+    font-size: 55px;
+    margin: 30px 30px 0 30px; /* Move text down with top margin */
+    color: white;
+    text-shadow: 4px 4px 20px rgb(97, 94, 94);
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: fitent; /* optional: helps with centering */
+    z-index: 10;
+} 
+
+.sm-cap {
+   position: relative;
+    font-size: 25px;
+    margin: 10px 30px 0 30px; /* Move text down with top margin */
+    color: white;
+    text-shadow: 4px 4px 20px rgb(75, 73, 73);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: fitent; /* optional: helps with centering */
+    z-index: 10;
+} 
+
+
+.intro-tt {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 350;
+  color: #ffffff;
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-10px 90px 0 90px;
+
+}
+
+/* <!-- word cloud section --> */
+
+
+
+ .cloud-img {
+  flex: 1 1 30%;       /* Take the full width if needed */
+  text-align: center;
+  margin-top: 100px;
+  
+  
+}
+
+.cloud-graph {
+   width: 100%;
+  margin-top: -295px;
+  margin-right: -147x;
+  max-width: 700px; /* Try 400–500px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px 10px 15px 10px; /* Less padding on the bottom */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cloud-graph:hover {
+  transform: scale(1.08); /* slightly enlarge */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); /* deeper shadow */
+}
+
+
+.phone-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+
+.phone-caption-top {
+  font-size: 16px;
+  margin: -10px 30px 0 30px; /* Top margin pushes text down */
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Varela Round', sans-serif;
+  margin-left: -682px;
+  display: inline-block;
+  width: fit-content;
+  
+}
+
+.phone-and-cloud {
+  display: flex;
+  gap: 80px;              /* ⬅️ space between phone and cloud */
+  justify-content: center;
+  flex-wrap: wrap;        /* stacks them on smaller screens */
+  margin-top: 40px;
+}
+
+.phone-figma-container,
+.cloud-section {
+  flex: 1 1 300px;         /* responsive columns */
+}
+
+.tt-cont {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 350;
+  color: white;
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-170px 40px 0 60px;
+
+}
+
+.quote-intro {
+  text-align: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 2px solid rgba(247, 247, 247, 0.55);
+  font-family: 'Audiowide', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(41, 41, 41);
+  padding: 20px 75px 20px 75px;  /* ⬅️ Extra tight left/right padding */
+  margin: -105px 35px 0 35px;
+  overflow-x: auto;
+  max-width: 100%;
+  border-radius: 50px;
+
+}
+
+.quote-cont {
+  text-align: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+  padding-top: 30px;   /* 🔽 Reduce this */
+  padding-bottom: 40px;
+  margin:-85px 40px 0 60px;
+}
+
+
+
+
+/* Table */
+.bubbly-table-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  margin-top: -145px;
+}
+
+.bubbly-table {
+  border-collapse: separate;
+  border-spacing: 14px;
+  width: 95%;
+  max-width: 1100px;
+  text-align: center;
+  /* font-family: 'Audiowide', sans-serif; */
+  background-color: transparent;
+}
+
+.bubbly-table th,
+.bubbly-table td {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(167, 167, 167, 0.21); /* translucent glassy bubble */
+  color: #ffffff;
+  font-size: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bubbly-table th {
+  background: rgba(106, 141, 191, 0.547); /* More transparent */
+  font-family: 'Audiowide', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.bubbly-table td:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 22px rgba(255, 255, 255, 0.2);
+}
 
