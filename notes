@@ -1,6 +1,6 @@
 <!-- look at HTML formatting elements -->
 
-<!-- head and body both have closing tag (closing has /) -->
+<!-- head and body h have closing tag (closing has /) -->
  <!-- always going to be working in the body -->
 
  <!-- put images in folder on left side, use <img src "INSERT RELATIVE PATH" alt "random image" -->
